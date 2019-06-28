@@ -14550,6 +14550,8 @@ in
   percona-server56 = callPackage ../servers/sql/percona/5.6.x.nix { };
   percona-server = percona-server56;
 
+  percona-server-mongodb = callPackage ../servers/nosql/percona-mongodb { };
+
   riak = callPackage ../servers/nosql/riak/2.2.0.nix {
     erlang = erlang_basho_R16B02;
   };
